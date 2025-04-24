@@ -1,5 +1,7 @@
+import argparse
 import json
 import plistlib
+import sys
 from pathlib import Path
 
 from ruamel.yaml import YAML
@@ -168,25 +170,41 @@ def write_json_config(path: str, policy_content: dict, metadata: dict):
 
 def main():
     """Generate OS-specific browser policies from policy spec"""
+    parser = argparse.ArgumentParser(
+        description="Generate OS-specific browser policies from a YAML file."
+    )
+    parser.add_argument(
+        "-f",
+        "--policy-file",
+        default="policies.yaml",
+        help="Path to the YAML policy file (default: policies.yaml)",
+    )
+    args = parser.parse_args()
 
-    policies = load_policies("policies.yaml")
-    for pname in [POLICY_CHROME, POLICY_BRAVE, POLICY_EDGE]:
-        print(f"Generating policies for '{pname}' ({len(policies[pname])} rules)")
-        write_mobile_config(
-            f"./generated/macos/{pname}.mobileconfig",
-            policies[pname],
-            METADATA[pname]["mobileconfig"],
-        )
-        write_reg_config(
-            f"./generated/windows/{pname}.reg",
-            policies[pname],
-            METADATA[pname]["registry"],
-        )
-        write_json_config(
-            f"./generated/linux/{pname}.json",
-            policies[pname],
-            {},
-        )
+    print("Using policy file:", args.policy_file)
+
+    try:
+        policies = load_policies(args.policy_file)
+        for pname in [POLICY_CHROME, POLICY_BRAVE, POLICY_EDGE]:
+            print(f"Generating policies for '{pname}' ({len(policies[pname])} rules)")
+            write_mobile_config(
+                f"./generated/macos/{pname}.mobileconfig",
+                policies[pname],
+                METADATA[pname]["mobileconfig"],
+            )
+            write_reg_config(
+                f"./generated/windows/{pname}.reg",
+                policies[pname],
+                METADATA[pname]["registry"],
+            )
+            write_json_config(
+                f"./generated/linux/{pname}.json",
+                policies[pname],
+                {},
+            )
+    except Exception as e:
+        print(f"Error: {e}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
