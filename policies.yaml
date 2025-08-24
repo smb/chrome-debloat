@@ -69,18 +69,29 @@ brave: &brave
   BraveVPNDisabled: true
   BraveAIChatEnabled: false
   BraveSyncUrl: ""
-
 # https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
 edge: &edge
   <<: *chrome
   # Application Guard
   ApplicationGuardFavoritesSyncEnabled: false
   ApplicationGuardPassiveModeEnabled: false
+  ApplicationGuardTrafficIdentificationEnabled: false
   ApplicationGuardUploadBlockingEnabled: false
+  # Cast
+  # -
+  # Certificate Management
+  # -
+  # Content Settings
+  # -
+  # Default Search Provider
+  # -
+  # Downloads
+  # -
   # Edge Typo Protection settings
   TyposquattingCheckerEnabled: false
   # Edge Workspaces
   EdgeWorkspacesEnabled: false
+  # Experimentation
   # Extensions
   ControlDefaultStateOfAllowExtensionFromOtherStoresSettingEnabled: true
   BlockExternalExtensions: false
@@ -89,21 +100,56 @@ edge: &edge
   - djkjpnciiommncecmdefpdllknjdmmmo # Cookie AutoDelete; Edge Web Store
   - kkacdgacpkediooahopgcbdahlpipheh # I still don't care about cookies; Edge Web Store
   - ihknoknoahjhldmpdoajjdkfjhddgpcd # Blank Tab; Edge Web Store
+  # Games
+  GamerModeEnabled: false
   # Generative AI
   GenAILocalFoundationalModelSettings: 1
+  # HTTP Auth
+  # -
   # Identity & SignIn
   ImplicitSignInEnabled: false
-  LinkedAccountEnabled: false
+  LinkedAccountEnabled: false # OBSOLETE
   ProactiveAuthWorkflowEnabled: false
+  SeamlessWebToBrowserSignInEnabled: false
   WebToBrowserSignInEnabled: false
+  # Idle Browser Actions
+  # -
+  # Immersive Reader
+  ImmersiveReaderGrammarToolsEnabled: false # OBSOLETE
+  ImmersiveReaderPictureDictionaryEnabled: false # OBSOLETE
+  # Kiosk Mode
+  # -
   # Manageability
   EdgeManagementEnabled: false
   EdgeManagementExtensionsFeedbackEnabled: false
   MAMEnabled: false
-  # Password Manager
+  # Native Messaging
+  # -
+  # Network Settings
+  # -
+  # PDF Reader
+  # -
+  # Password Manager and Protection
+  PasswordManagerEnabled: false
+  PasswordMonitorAllowed: false
+  PasswordExportEnabled: false
   PasswordGeneratorEnabled: false
   PasswordRevealEnabled: false
-  PasswordMonitorAllowed: false
+  # Performance
+  ExtensionsPerformanceDetectorEnabled: false
+  PerformanceDetectorEnabled: false
+  PinBrowserEssentialsToolbarButton: false
+  StartupBoostEnabled: false
+  # Permit or deny screen capture
+  # -
+  # Prining
+  # -
+  # Private Network Request Setting
+  # -
+  # Profile Settings
+  # -
+  # Proxy Server
+  # -
   # Related Website Sets
   RelatedWebsiteSetsEnabled: false
   # Scareware Blocker
@@ -113,68 +159,90 @@ edge: &edge
   SmartScreenPuaEnabled: false
   SmartScreenForTrustedDownloadsEnabled: false
   SmartScreenDnsRequestsEnabled: false
+  # Sleeping Tabs
+  # -
+  # Smartscreen
+  # -
   # Startup, home page and new tab page
+  NewTabPageAllowedBackgroundTypes: 3
   NewTabPageAppLauncherEnabled: false
   NewTabPageBingChatEnabled: false
   NewTabPageContentEnabled: false
   NewTabPageHideDefaultTopSites: true
   NewTabPagePrerenderEnabled: false
   NewTabPageQuickLinksEnabled: false
+  NewTabPageLocation: "about:blank"
+  # WebRTC
+  # -
   # Additional
   AADWebSiteSSOUsingThisProfileEnabled: false
   AccessibilityImageLabelsEnabled: false
-  AddressBarMicrosoftSearchInBingProviderEnabled: false
+  AddressBarMicrosoftSearchInBingProviderEnabled: false # OBSOLETE
   AIGenThemesEnabled: false
   AllowGamesMenu: false
   AlternateErrorPagesEnabled: false
   AmbientAuthenticationInPrivateModesEnabled: false
   AutomaticHttpsDefault: true # improved QoL
   BingAdsSuppression: true
+  BrowserGuestModeEnabled: false
+  BrowserSignin: 0
   ComposeInlineEnabled: false
-  ConfigureDoNotTrack: false
-  CryptoWalletEnabled: false
+  ConfigureDoNotTrack: true
+  CryptoWalletEnabled: false # OBSOLETE
   DiagnosticData: 0
   Edge3PSerpTelemetryEnabled: false
   EdgeAssetDeliveryServiceEnabled: false
   EdgeCollectionsEnabled: false
-  EdgeDiscoverEnabled: false
+  EdgeDiscoverEnabled: false # OBSOLETE
   EdgeEDropEnabled: false
-  EdgeEnhanceImagesEnabled: false
-  EdgeFollowEnabled: false
+  EdgeEnhanceImagesEnabled: false # OBSOLETE
+  EdgeFollowEnabled: false # OBSOLETE
+  EdgeHistoryAISearchEnabled: false
   EdgeShoppingAssistantEnabled: false
   EdgeWalletCheckoutEnabled: false
   EdgeWalletEtreeEnabled: false
   ExperimentationAndConfigurationServiceControl: 0
   ForceSync: false
+  HttpsUpgradesEnabled: true
   HubsSidebarEnabled: false
-  ImageEditorServiceEnabled: false
+  ImageEditorServiceEnabled: false # OBSOLETE
   InAppSupportEnabled: false
   InternetExplorerIntegrationLevel: 0
   LiveCaptionsAllowed: false
   LiveTranslationAllowed: false
-  MathSolverEnabled: false
+  LocalProvidersEnabled: false
+  MathSolverEnabled: false # OBSOLETE
   MicrosoftEdgeInsiderPromotionEnabled: false
   MicrosoftEditorProofingEnabled: false
   MicrosoftEditorSynonymsEnabled: false
   MicrosoftOfficeMenuEnabled: false
+  NonRemovableProfileEnabled: false # Used with BrowserSignin=0
   OutlookHubMenuEnabled: false
   PaymentMethodQueryEnabled: false
   PersonalizationReportingEnabled: false
   PersonalizeTopSitesInCustomizeSidebarEnabled: false
   PictureInPictureOverlayEnabled: false
-  PromotionalTabsEnabled: false
+  ProactiveAuthEnabled: false # OBSOLETE
+  PromotionalTabsEnabled: false # DEPRECATED
   PromptForDownloadLocation: false # improved QoL
+  ReadAloudEnabled: false
   ResolveNavigationErrorsUseWebService: false
+  SearchSuggestEnabled: false
+  SharedLinksEnabled: false
+  ShowAcrobatSubscriptionButton: false
   ShowMicrosoftRewards: false
+  ShowOfficeShortcutInFavoritesBar: false
   ShowRecommendationsEnabled: false
   SpeechRecognitionEnabled: false
+  SpellcheckEnabled: false
   StandaloneHubsSidebarEnabled: false
+  TabServiceEnabled: false
   TextPredictionEnabled: false
   TranslateEnabled: true # improved QoL
-  TravelAssistanceEnabled: false
+  TravelAssistanceEnabled: false # OBSOLETE
   UploadFromPhoneEnabled: false
   UrlDiagnosticDataEnabled: false
   UserFeedbackAllowed: false
   VisualSearchEnabled: false
   WalletDonationEnabled: false
-  WebWidgetAllowed: false
+  WebWidgetAllowed: false # DEPRECATED

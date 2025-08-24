@@ -35,6 +35,8 @@
 			<false/>
 			<key>ApplicationGuardPassiveModeEnabled</key>
 			<false/>
+			<key>ApplicationGuardTrafficIdentificationEnabled</key>
+			<false/>
 			<key>ApplicationGuardUploadBlockingEnabled</key>
 			<false/>
 			<key>TyposquattingCheckerEnabled</key>
@@ -52,6 +54,8 @@
 				<string>kkacdgacpkediooahopgcbdahlpipheh</string>
 				<string>ihknoknoahjhldmpdoajjdkfjhddgpcd</string>
 			</array>
+			<key>GamerModeEnabled</key>
+			<false/>
 			<key>GenAILocalFoundationalModelSettings</key>
 			<integer>1</integer>
 			<key>ImplicitSignInEnabled</key>
@@ -60,7 +64,13 @@
 			<false/>
 			<key>ProactiveAuthWorkflowEnabled</key>
 			<false/>
+			<key>SeamlessWebToBrowserSignInEnabled</key>
+			<false/>
 			<key>WebToBrowserSignInEnabled</key>
+			<false/>
+			<key>ImmersiveReaderGrammarToolsEnabled</key>
+			<false/>
+			<key>ImmersiveReaderPictureDictionaryEnabled</key>
 			<false/>
 			<key>EdgeManagementEnabled</key>
 			<false/>
@@ -68,11 +78,23 @@
 			<false/>
 			<key>MAMEnabled</key>
 			<false/>
+			<key>PasswordManagerEnabled</key>
+			<false/>
+			<key>PasswordMonitorAllowed</key>
+			<false/>
+			<key>PasswordExportEnabled</key>
+			<false/>
 			<key>PasswordGeneratorEnabled</key>
 			<false/>
 			<key>PasswordRevealEnabled</key>
 			<false/>
-			<key>PasswordMonitorAllowed</key>
+			<key>ExtensionsPerformanceDetectorEnabled</key>
+			<false/>
+			<key>PerformanceDetectorEnabled</key>
+			<false/>
+			<key>PinBrowserEssentialsToolbarButton</key>
+			<false/>
+			<key>StartupBoostEnabled</key>
 			<false/>
 			<key>RelatedWebsiteSetsEnabled</key>
 			<false/>
@@ -86,6 +108,8 @@
 			<false/>
 			<key>SmartScreenDnsRequestsEnabled</key>
 			<false/>
+			<key>NewTabPageAllowedBackgroundTypes</key>
+			<integer>3</integer>
 			<key>NewTabPageAppLauncherEnabled</key>
 			<false/>
 			<key>NewTabPageBingChatEnabled</key>
@@ -98,6 +122,8 @@
 			<false/>
 			<key>NewTabPageQuickLinksEnabled</key>
 			<false/>
+			<key>NewTabPageLocation</key>
+			<string>about:blank</string>
 			<key>AADWebSiteSSOUsingThisProfileEnabled</key>
 			<false/>
 			<key>AccessibilityImageLabelsEnabled</key>
@@ -116,10 +142,14 @@
 			<true/>
 			<key>BingAdsSuppression</key>
 			<true/>
+			<key>BrowserGuestModeEnabled</key>
+			<false/>
+			<key>BrowserSignin</key>
+			<integer>0</integer>
 			<key>ComposeInlineEnabled</key>
 			<false/>
 			<key>ConfigureDoNotTrack</key>
-			<false/>
+			<true/>
 			<key>CryptoWalletEnabled</key>
 			<false/>
 			<key>DiagnosticData</key>
@@ -138,6 +168,8 @@
 			<false/>
 			<key>EdgeFollowEnabled</key>
 			<false/>
+			<key>EdgeHistoryAISearchEnabled</key>
+			<false/>
 			<key>EdgeShoppingAssistantEnabled</key>
 			<false/>
 			<key>EdgeWalletCheckoutEnabled</key>
@@ -148,6 +180,8 @@
 			<integer>0</integer>
 			<key>ForceSync</key>
 			<false/>
+			<key>HttpsUpgradesEnabled</key>
+			<true/>
 			<key>HubsSidebarEnabled</key>
 			<false/>
 			<key>ImageEditorServiceEnabled</key>
@@ -160,6 +194,8 @@
 			<false/>
 			<key>LiveTranslationAllowed</key>
 			<false/>
+			<key>LocalProvidersEnabled</key>
+			<false/>
 			<key>MathSolverEnabled</key>
 			<false/>
 			<key>MicrosoftEdgeInsiderPromotionEnabled</key>
@@ -169,6 +205,8 @@
 			<key>MicrosoftEditorSynonymsEnabled</key>
 			<false/>
 			<key>MicrosoftOfficeMenuEnabled</key>
+			<false/>
+			<key>NonRemovableProfileEnabled</key>
 			<false/>
 			<key>OutlookHubMenuEnabled</key>
 			<false/>
@@ -180,19 +218,35 @@
 			<false/>
 			<key>PictureInPictureOverlayEnabled</key>
 			<false/>
+			<key>ProactiveAuthEnabled</key>
+			<false/>
 			<key>PromotionalTabsEnabled</key>
 			<false/>
 			<key>PromptForDownloadLocation</key>
 			<false/>
+			<key>ReadAloudEnabled</key>
+			<false/>
 			<key>ResolveNavigationErrorsUseWebService</key>
 			<false/>
+			<key>SearchSuggestEnabled</key>
+			<false/>
+			<key>SharedLinksEnabled</key>
+			<false/>
+			<key>ShowAcrobatSubscriptionButton</key>
+			<false/>
 			<key>ShowMicrosoftRewards</key>
+			<false/>
+			<key>ShowOfficeShortcutInFavoritesBar</key>
 			<false/>
 			<key>ShowRecommendationsEnabled</key>
 			<false/>
 			<key>SpeechRecognitionEnabled</key>
 			<false/>
+			<key>SpellcheckEnabled</key>
+			<false/>
 			<key>StandaloneHubsSidebarEnabled</key>
+			<false/>
+			<key>TabServiceEnabled</key>
 			<false/>
 			<key>TextPredictionEnabled</key>
 			<false/>
@@ -226,8 +280,6 @@
 			<false/>
 			<key>DriveDisabled</key>
 			<true/>
-			<key>PasswordManagerEnabled</key>
-			<false/>
 			<key>PasswordSharingEnabled</key>
 			<false/>
 			<key>PasswordLeakDetectionEnabled</key>
@@ -268,10 +320,6 @@
 			<false/>
 			<key>BackgroundModeEnabled</key>
 			<false/>
-			<key>BrowserGuestModeEnabled</key>
-			<false/>
-			<key>BrowserSignin</key>
-			<integer>0</integer>
 			<key>BuiltInDnsClientEnabled</key>
 			<false/>
 			<key>DefaultBrowserSettingEnabled</key>
