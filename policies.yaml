@@ -63,12 +63,20 @@ chrome: &chrome
 # https://support.brave.com/hc/en-us/articles/360039248271-Group-Policy
 brave: &brave
   <<: *chrome
-  TorDisabled: true
-  BraveRewardsDisabled: true
-  BraveWalletDisabled: true
-  BraveVPNDisabled: true
   BraveAIChatEnabled: false
+  BraveNewsDisabled: true # brave 1.82
+  BraveP3AEnabled: false # brave 1.83
+  BraveRewardsDisabled: true
+  BraveSpeedreaderEnabled: false # brave 1.82
+  BraveStatsPingEnabled: false # brave 1.83
   BraveSyncUrl: ""
+  BraveTalkDisabled: true # brave 1.82
+  BraveVPNDisabled: true
+  BraveWalletDisabled: true
+  BraveWaybackMachineEnabled: false # brave 1.82
+  BraveWebDiscoveryEnabled: false # brave 1.83
+  TorDisabled: true
+
 # https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
 edge: &edge
   <<: *chrome

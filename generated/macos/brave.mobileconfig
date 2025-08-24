@@ -31,18 +31,32 @@
 			<integer>1</integer>
 			<key>PayloadEnabled</key>
 			<true/>
-			<key>TorDisabled</key>
+			<key>BraveAIChatEnabled</key>
+			<false/>
+			<key>BraveNewsDisabled</key>
 			<true/>
+			<key>BraveP3AEnabled</key>
+			<false/>
 			<key>BraveRewardsDisabled</key>
 			<true/>
-			<key>BraveWalletDisabled</key>
-			<true/>
-			<key>BraveVPNDisabled</key>
-			<true/>
-			<key>BraveAIChatEnabled</key>
+			<key>BraveSpeedreaderEnabled</key>
+			<false/>
+			<key>BraveStatsPingEnabled</key>
 			<false/>
 			<key>BraveSyncUrl</key>
 			<string></string>
+			<key>BraveTalkDisabled</key>
+			<true/>
+			<key>BraveVPNDisabled</key>
+			<true/>
+			<key>BraveWalletDisabled</key>
+			<true/>
+			<key>BraveWaybackMachineEnabled</key>
+			<false/>
+			<key>BraveWebDiscoveryEnabled</key>
+			<false/>
+			<key>TorDisabled</key>
+			<true/>
 			<key>DefaultGeolocationSetting</key>
 			<integer>2</integer>
 			<key>DefaultNotificationsSetting</key>
