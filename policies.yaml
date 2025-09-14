@@ -7,7 +7,6 @@ chromeExtensions: &chromeExtensions
   - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies; Chrome Web Store
   - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock; Chrome Web Store
   - bbeaicapbccfllodepmimpkgecanonai # BlockTube; Chrome Web Store
-  - jaadjnlkjnhohljficgoddcjmndjfdmi # Blank Tab; Chrome Web Store
   - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes; Chrome Web Store
 
 # https://chromeenterprise.google/policies/
@@ -58,7 +57,6 @@ chrome: &chrome
   ParcelTrackingEnabled: false
   RelatedWebsiteSetsEnabled: false
   ShoppingListEnabled: false
-  SyncDisabled: true
 
 # https://support.brave.com/hc/en-us/articles/360039248271-Group-Policy
 brave: &brave

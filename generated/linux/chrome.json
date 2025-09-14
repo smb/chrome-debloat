@@ -38,7 +38,6 @@
   "ParcelTrackingEnabled": false,
   "RelatedWebsiteSetsEnabled": false,
   "ShoppingListEnabled": false,
-  "SyncDisabled": true,
   "ExtensionManifestV2Availability": 2,
   "ExtensionInstallForcelist": [
     "cjpalhdlnbpafiamejdnhcphjbkeiagm",
@@ -47,7 +46,6 @@
     "edibdbjcniadpccecjdfdjjppcpchdlm",
     "mnjggcdmjocbbbhaepdhchncahnbgone",
     "bbeaicapbccfllodepmimpkgecanonai",
-    "jaadjnlkjnhohljficgoddcjmndjfdmi",
     "ldpochfccmkkmhdbclfhpagapcfdljkj"
   ]
 }

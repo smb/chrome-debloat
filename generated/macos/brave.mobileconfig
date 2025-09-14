@@ -131,8 +131,6 @@
 			<false/>
 			<key>ShoppingListEnabled</key>
 			<false/>
-			<key>SyncDisabled</key>
-			<true/>
 			<key>ExtensionManifestV2Availability</key>
 			<integer>2</integer>
 			<key>ExtensionInstallForcelist</key>
@@ -143,7 +141,6 @@
 				<string>edibdbjcniadpccecjdfdjjppcpchdlm</string>
 				<string>mnjggcdmjocbbbhaepdhchncahnbgone</string>
 				<string>bbeaicapbccfllodepmimpkgecanonai</string>
-				<string>jaadjnlkjnhohljficgoddcjmndjfdmi</string>
 				<string>ldpochfccmkkmhdbclfhpagapcfdljkj</string>
 			</array>
 		</dict>
